@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Trabalho 2 - Chatbot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .chatElement {
+        height: 600px;
+        width: 60%;
+      }
+    </style>
+  </head>  
+  <body>    
+    <div class="chatElement"></div>
+    <script>
+      const element = document.querySelector('.chatElement');
+
+      window.watsonAssistantChatOptions = {
+        integrationID: "2515eb3b-779e-4f48-a6ec-a3e83841d263", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "4c76dd25-4d06-4cbb-b1fe-ff97e06d5423", // The ID of your service instance.
+        element: element,
+        openChatByDefault: true,
+        showLauncher: false,
+        hideCloseButton: true,
+        carbonTheme: 'g90',
+        onLoad: function (instance) {
+          instance.render();
+        }
+
+      };
+      setTimeout(function () {
+        const t = document.createElement('script');
+        t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+</html>
