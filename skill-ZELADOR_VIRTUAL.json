@@ -1,0 +1,1455 @@
+{
+  "intents": [
+    {
+      "intent": "boletos",
+      "examples": [
+        {
+          "text": "boleto"
+        },
+        {
+          "text": "boletos"
+        },
+        {
+          "text": "fatura"
+        },
+        {
+          "text": "mensalidade"
+        },
+        {
+          "text": "quero imprimir duplicata"
+        },
+        {
+          "text": "quero ver a taxa"
+        },
+        {
+          "text": "segunda via"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "reclamacao",
+      "examples": [
+        {
+          "text": "bagunça"
+        },
+        {
+          "text": "barulho"
+        },
+        {
+          "text": "reclamacao"
+        },
+        {
+          "text": "reclamação"
+        },
+        {
+          "text": "reclamacoes"
+        },
+        {
+          "text": "reclamações"
+        },
+        {
+          "text": "som alto"
+        },
+        {
+          "text": "sujeira"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "reservas",
+      "examples": [
+        {
+          "text": "almoço"
+        },
+        {
+          "text": "churrasco"
+        },
+        {
+          "text": "reserva"
+        },
+        {
+          "text": "reservas"
+        },
+        {
+          "text": "salão"
+        },
+        {
+          "text": "salão de festas"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "sair",
+      "examples": [
+        {
+          "text": "cancelar"
+        },
+        {
+          "text": "fechar"
+        },
+        {
+          "text": "não quero mais"
+        },
+        {
+          "text": "sair"
+        },
+        {
+          "text": "tchau"
+        },
+        {
+          "text": "xau"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "telefone",
+      "examples": [
+        {
+          "text": "apartamentos"
+        },
+        {
+          "text": "celular"
+        },
+        {
+          "text": "consulta"
+        },
+        {
+          "text": "telefone"
+        },
+        {
+          "text": "vizinho"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "boleto",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "boleto",
+          "synonyms": [
+            "boleto"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "código de barras",
+          "synonyms": [
+            "código de barras"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "condomínio",
+          "synonyms": [
+            "condomínio"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "pagar",
+          "synonyms": [
+            "pagar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "taxa",
+          "synonyms": [
+            "taxa",
+            "taxa de condomínio"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "confirmacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "não",
+          "synonyms": [
+            "não",
+            "negativo",
+            "no"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "positivo",
+            "sim",
+            "yes"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "item_reclamacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "área comum",
+          "synonyms": [
+            "comum",
+            "corredor",
+            "entrada",
+            "estacionamento",
+            "hall",
+            "jardim",
+            "portão",
+            "telhado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "unidade",
+          "synonyms": [
+            "apartamento",
+            "morador de baixo",
+            "morador de cima",
+            "unidade",
+            "vizinho"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "reclamacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "barulho",
+          "synonyms": [
+            "barulho"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "criança",
+          "synonyms": [
+            "criança"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "estacionemento",
+          "synonyms": [
+            "estacionemento"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "festa",
+          "synonyms": [
+            "festa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "jardim",
+          "synonyms": [
+            "jardim"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "reclamacao",
+          "synonyms": [
+            "reclamacao, ",
+            "reclamar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "salto alto",
+          "synonyms": [
+            "salto alto"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "reservas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "aniversário",
+          "synonyms": [
+            "aniversário"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "casamento",
+          "synonyms": [
+            "casamento"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "churrasco",
+          "synonyms": [
+            "churrasco"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "churrasqueira",
+          "synonyms": [
+            "churrasqueira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "reservas",
+          "synonyms": [
+            "reserva",
+            "reservar",
+            "reservas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "salao",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "salão 1",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "salão 2",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "salão de festas",
+          "synonyms": [
+            "salão de festas"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "salão",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "salão 1",
+          "synonyms": [
+            "1",
+            "salão menor",
+            "um"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "salão 2",
+          "synonyms": [
+            "2",
+            "dois",
+            "salão maior"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "telefones",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "telefone",
+          "synonyms": [
+            "contato",
+            "número condômino",
+            "visinho",
+            "vizinho"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tipo_reclamacao_comum",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "corredor",
+          "synonyms": [
+            "corredor",
+            "parede quebrada",
+            "piso quebrado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "elevador",
+          "synonyms": [
+            "barulho elevador",
+            "elevador travou"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Estacionamento",
+          "synonyms": [
+            "entulho",
+            "estacionado errado",
+            "fora da garagem",
+            "vaga"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "jardim",
+          "synonyms": [
+            "carrapato",
+            "coco",
+            "formiga",
+            "grama alta",
+            "Mato",
+            "praga"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Portão",
+          "synonyms": [
+            "portão caiu",
+            "portão não abre",
+            "senha não funciona",
+            "tag com problema"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tipo_reclamacao_unidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "barulho",
+          "synonyms": [
+            "barulho depois das 22",
+            "festa",
+            "salto alto",
+            "som alto"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Obra",
+          "synonyms": [
+            "infiltração",
+            "obra fora de horário"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "unidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "101",
+          "synonyms": [
+            "101"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "102",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "103",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "201",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "202",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "203",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "301",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "302",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "303",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "401",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "402",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "403",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "http://projeto-chatbot.tecnologia.ws/ws.php",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "title": "Olá. Eu sou Zé o zelador virtual do condomínio. Como eu poderia lhe ajudar?",
+            "options": [
+              {
+                "label": "Boletos",
+                "value": {
+                  "input": {
+                    "text": "boleto"
+                  }
+                }
+              },
+              {
+                "label": "Reservas",
+                "value": {
+                  "input": {
+                    "text": "salao"
+                  }
+                }
+              },
+              {
+                "label": "Telefone",
+                "value": {
+                  "input": {
+                    "text": "telefone"
+                  }
+                }
+              },
+              {
+                "label": "Reclamações",
+                "value": {
+                  "input": {
+                    "text": "reclamacão"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_9_1620780238614",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1620780407468",
+      "previous_sibling": "node_1_1621282251113"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe a unidade para registrar a reclamação"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_7_1620869720316",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1620869720337",
+      "previous_sibling": "handler_3_1620869720337"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1620870158027",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1620870158045",
+      "previous_sibling": "handler_6_1620870158045"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_5_1620779020025",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1620779426955"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_8_1620869646791",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1620869719581",
+      "previous_sibling": "node_4_1620870548861"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_9_1620780256977",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1620870157432"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1620869720316",
+      "context": {
+        "unidade": "@unidade"
+      },
+      "conditions": "@unidade",
+      "event_name": "input",
+      "dialog_node": "handler_3_1620869720337"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1620780408014",
+      "context": {
+        "unidade": "@unidade"
+      },
+      "conditions": "@unidade",
+      "event_name": "input",
+      "dialog_node": "handler_6_1620780408025"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_7_1620870158027",
+      "event_name": "input",
+      "dialog_node": "handler_6_1620870158045"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe o número do Apartamento (Ex.: 101)?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1620780408014",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1620780408025",
+      "previous_sibling": "handler_6_1620780408025"
+    },
+    {
+      "type": "standard",
+      "title": "em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Favor reformular a frase."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1620957867790",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_8_1620960358027",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "reinicia_processo",
+      "output": {
+        "generic": [
+          {
+            "title": "Posso ajudar em mais alguma coisa?",
+            "options": [
+              {
+                "label": "Boletos",
+                "value": {
+                  "input": {
+                    "text": "boletos"
+                  }
+                }
+              },
+              {
+                "label": "Reservas",
+                "value": {
+                  "input": {
+                    "text": "salao"
+                  }
+                }
+              },
+              {
+                "label": "Telefone",
+                "value": {
+                  "input": {
+                    "text": "telefone"
+                  }
+                }
+              },
+              {
+                "label": "Reclamações",
+                "value": {
+                  "input": {
+                    "text": "reclamacão"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1620777680373"
+      },
+      "conditions": "",
+      "dialog_node": "node_1_1620955450428",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "consulta_telefone_ws",
+      "parent": "node_9_1620780238614",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "unidade": "$unidade",
+            "tipo_consulta": "telefone"
+          },
+          "result_variable": "webhook_result_telefone"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1620955450428"
+      },
+      "conditions": "",
+      "dialog_node": "node_1_1621282251113"
+    },
+    {
+      "type": "standard",
+      "title": "registra_opcao",
+      "parent": "Bem-vindo",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1620777680373"
+    },
+    {
+      "type": "standard",
+      "title": "opcao_reserva",
+      "parent": "node_2_1620777680373",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_7_1620782729292"
+      },
+      "conditions": "#reservas",
+      "dialog_node": "node_2_1620780198749",
+      "previous_sibling": "node_5_1620779020025"
+    },
+    {
+      "type": "standard",
+      "title": "opacao_comum",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor descreva a reclamação."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1620780256977",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@item_reclamacao:(área comum)",
+      "dialog_node": "node_3_1620870020315",
+      "previous_sibling": "node_8_1620869646791"
+    },
+    {
+      "type": "standard",
+      "title": "opcao_unidade_registro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor descreva a reclamação da unidade"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1620869646791",
+      "conditions": "@unidade",
+      "dialog_node": "node_4_1620870548861"
+    },
+    {
+      "type": "standard",
+      "title": "registra_ocorrencia_unidade",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Reclamação Registrada. Em breve um atendente da nossa equipe entrará em contato com você."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1620870548861",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1620955450428"
+      },
+      "conditions": "true",
+      "dialog_node": "node_4_1620955733090"
+    },
+    {
+      "type": "standard",
+      "title": "opcao_boleto",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você pode emitir a 2ª via do boleto através do link http://google.com"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1620777680373",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1620955450428"
+      },
+      "conditions": "#boletos",
+      "dialog_node": "node_5_1620779020025"
+    },
+    {
+      "type": "standard",
+      "title": "confirma_reserva_sim",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Reserva efetuada com sucesso!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1620869035354",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1620955450428"
+      },
+      "conditions": "@confirmacao:sim",
+      "dialog_node": "node_5_1620870809916"
+    },
+    {
+      "type": "standard",
+      "title": "confirma_reserva",
+      "output": {
+        "generic": [
+          {
+            "title": "Data liberada. Deseja efetuar a reserva?",
+            "options": [
+              {
+                "label": "Sim",
+                "value": {
+                  "input": {
+                    "text": "sim"
+                  }
+                }
+              },
+              {
+                "label": "Não",
+                "value": {
+                  "input": {
+                    "text": "nao"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1620782729292",
+      "conditions": "true",
+      "dialog_node": "node_6_1620869035354"
+    },
+    {
+      "type": "standard",
+      "title": "data_reserva",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual a data da Reserva?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1620780198749",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1620869035354"
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1620782729292"
+    },
+    {
+      "type": "standard",
+      "title": "registra_ocorrencia_comum",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Reclamação Registrada. Em breve um atendente da nossa equipe entrará em contato com você."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1620870020315",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1620955450428"
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1620955806445"
+    },
+    {
+      "type": "frame",
+      "title": "opcao_unidade",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1620780256977",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1620870548861"
+      },
+      "conditions": "@item_reclamacao:unidade",
+      "dialog_node": "node_8_1620869646791",
+      "previous_sibling": "slot_7_1620870158027"
+    },
+    {
+      "type": "standard",
+      "title": "sair",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Volte Sempre!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "boletos": null,
+        "reservas": null,
+        "telefone": null,
+        "reclamacao": null
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "#sair",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1620960358027",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1620955450428"
+    },
+    {
+      "type": "frame",
+      "title": "opcao_telefones",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1620777680373",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1621282251113"
+      },
+      "conditions": "#telefone",
+      "dialog_node": "node_9_1620780238614",
+      "previous_sibling": "node_2_1620780198749"
+    },
+    {
+      "type": "standard",
+      "title": "opcao_reclamacao",
+      "parent": "node_2_1620777680373",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_8_1620869646791"
+      },
+      "conditions": "#reclamacao || @item_reclamacao",
+      "dialog_node": "node_9_1620780256977",
+      "previous_sibling": "node_9_1620780238614"
+    },
+    {
+      "type": "standard",
+      "title": "confirma_reserva_nao",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Reserva não efetuada!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1620869035354",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1620955450428"
+      },
+      "conditions": "@confirmacao:não",
+      "dialog_node": "node_9_1620870870414",
+      "previous_sibling": "node_5_1620870809916"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1620777680373",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1620780238614"
+      },
+      "conditions": "#telefone",
+      "dialog_node": "response_1_1620777806039",
+      "previous_sibling": "response_2_1620777790874"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1620777680373",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1620779020025"
+      },
+      "conditions": "#boletos",
+      "dialog_node": "response_2_1620777746926",
+      "previous_sibling": "node_9_1620780256977"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Qual salão você gostaria de reservar?",
+            "options": [
+              {
+                "label": "Salão 1",
+                "value": {
+                  "input": {
+                    "text": "salão 1"
+                  }
+                }
+              },
+              {
+                "label": "Salão 2",
+                "value": {
+                  "input": {
+                    "text": "salão 2"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1620777680373",
+      "conditions": "#reservas",
+      "dialog_node": "response_2_1620777790874",
+      "previous_sibling": "response_2_1620777746926"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1620869646791",
+      "disabled": true,
+      "dialog_node": "response_2_1620869697299",
+      "previous_sibling": "slot_7_1620869720316"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1620870020315",
+      "disabled": true,
+      "conditions": "anything_else",
+      "dialog_node": "response_3_1620955330740",
+      "previous_sibling": "response_6_1620955330258"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Sua reclamação é referente a:",
+            "options": [
+              {
+                "label": "Algum Apartamento",
+                "value": {
+                  "input": {
+                    "text": "unidade"
+                  }
+                }
+              },
+              {
+                "label": "Área Comum",
+                "value": {
+                  "input": {
+                    "text": "comum"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1620777680373",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_9_1620780256977"
+      },
+      "conditions": "#reclamacao",
+      "dialog_node": "response_5_1620777813530",
+      "previous_sibling": "response_1_1620777806039"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Ocorreu um erro ao buscar os dados. Tente novamente mais tarde."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1621282251113",
+      "conditions": "anything_else",
+      "dialog_node": "response_5_1621282283521",
+      "previous_sibling": "response_8_1621282282297"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1620870020315",
+      "disabled": true,
+      "conditions": "$action_result_1",
+      "dialog_node": "response_6_1620955330258",
+      "previous_sibling": "response_8_1620955328921"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor descreva a reclamação."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1620870020315",
+      "disabled": true,
+      "dialog_node": "response_8_1620955328921",
+      "previous_sibling": "node_7_1620955806445"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$webhook_result_telefone.resultado"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1621282251113",
+      "conditions": "$webhook_result_telefone",
+      "dialog_node": "response_8_1621282282297"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1620780238614",
+      "variable": "$unidade",
+      "dialog_node": "slot_2_1620780408014",
+      "previous_sibling": "handler_10_1620780407468"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1620869646791",
+      "variable": "$unidade",
+      "dialog_node": "slot_7_1620869720316",
+      "previous_sibling": "handler_1_1620869719581"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1620780256977",
+      "dialog_node": "slot_7_1620870158027",
+      "previous_sibling": "handler_2_1620870157432"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "olá"
+    },
+    {
+      "text": "unidade"
+    }
+  ],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "ZELADOR_VIRTUAL",
+  "language": "pt-br",
+  "description": ""
+}
